@@ -24,8 +24,23 @@
       <p>Join the discussion and contribute to the FIM community.</p>
     </div>
   </section>
+
+  <section class="visualization-section">
+    <h2>Ω-Plane Interactive Visualization</h2>
+    <div class="canvas-container">
+      <canvas id="fimCanvas"></canvas>
+    </div>
+    <div class="controls">
+      <p><strong>Controls:</strong> Scroll to zoom | Click to place finite points</p>
+      <label for="omegaSlider">Adjust Ω Value:</label>
+      <input type="range" id="omegaSlider" min="100" max="5000" value="1000" step="10">
+      <span id="omegaValue">1000</span>
+    </div>
+  </section>
 </div>
-<iframe src="https://editor.p5js.org/Glitchonlava/sketches/YgxPqa2pZ" width="600" height="400"></iframe>
+
 <footer>
   <p>&copy; 2025 FIM. All rights reserved.</p>
 </footer>
+
+<script src="fim-visualization.js"></script>
